@@ -194,9 +194,8 @@ h3 {
     /* Displays the counter value */
     content: counter(numbering);
     font-size: 40px;
-    margin: 0 30px;
     position: absolute;
-    left: -50px;
+    left: -20px;
 }
 
 /* ::after is a pseudo-element as well*/
