@@ -1,0 +1,241 @@
+/* Imports fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ::selection is a pseudo element that changes the background and font color when highlighted by the user */
+::selection {
+    background-color: #001524;
+    color: #8eb995;
+}
+
+body {
+    background-color: #445D48;
+    /* Resets the default margin */
+    margin: 0;
+    /* Initialize the font family */
+    font-family: "Tenor Sans", sans-serif;
+}
+
+
+nav {
+    background-color: #001524;
+    color: #E6E5A3;
+    /* Makes the nav's elements flexible*/
+    display: flex;
+    /* Aligns the child elements vertically center to nav */
+    align-items: center;
+    /* Aligns the child elements horizontally center to nav */
+    justify-content: center;
+    height: 133px;
+}
+
+a {
+    color: #E6E5A3;
+    font-size: 32px;
+    /* Removes the anchor tags' underline */
+    text-decoration: none;
+}
+
+#logo {
+    margin-right: 171px;
+}
+
+.nav-links {
+    font-size: 20px;
+    margin-right: 76px;
+    letter-spacing: 5px;
+    /* Makes the text displayed to uppercase letters */
+    text-transform: uppercase;
+}
+
+header {
+    /* Sets the top and bottom margin 0 while right and left to 91px */
+    color: white;
+    margin: 0 91px;
+    /* Sets the top and bottom padding 143px while right and left to 0*/
+    padding: 143px 0;
+    display: flex;
+}
+
+.header-components {
+    margin: 0 20px;
+}
+
+#header-image {
+    height: 475px;
+    width: 475px;
+    /*Fills the whole box with the image while maintaining its original form*/
+    object-fit: cover;
+}
+
+/* The nested child h2 element from the class header-components */
+.header-components>h2 {
+    font-size: 32px;
+    /* Changes the thickness or boldness of the text */
+    font-weight: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.header-components>h1 {
+    font-size: 48px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.header-components>p {
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+
+#header-items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* Space the elements in the container evenly */
+    justify-content: space-evenly;
+    font-size: 20px;
+    letter-spacing: 8px;
+    line-height: 40px;
+}
+
+/* Adds a vertical line*/
+.border-line {
+    width: 0.5px;
+    height: 100px;
+    background-color: white;
+}
+
+/* Changes the font-family of the main content*/
+main {
+    font-family: "Public Sans", sans-serif;
+    margin: 0 91px;
+}
+
+#ingredients-section {
+    margin-bottom: 143px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ingredients-images {
+    margin: 65px 0;
+    width: 630px;
+    /* Sets the position of the element relative basically the current position of the element */
+    position: relative;
+}
+
+#image1 {
+    height: 475px;
+    width: 475px;
+    object-fit: cover;
+}
+
+#image2 {
+    height: 475px;
+    width: 475px;
+    object-fit: cover;
+    /* The parent element's position will be a reference for the element selected which is basically the top-left corner */
+    position: absolute;
+    /* Moves the element to the bottom */
+    top: 350px;
+    /* Moves the element to the right */
+    left: 150px;
+
+}
+
+#ingredients-container {
+    background-color: #E6E5A3;
+    padding: 60px;
+}
+
+.recipe-heading {
+    font-size: 35px;
+    color: #001524;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Sets the font-weight of headings 3 in ingredients*/
+h3 {
+    font-weight: 600;
+}
+
+.ingredients-list-items {
+    letter-spacing: 2px;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+#instructions-section {
+    background-color: #E6E5A3;
+    padding: 60px;
+    margin: 90px 0;
+}
+
+#instructions-list-items {
+    /* Initializes the counter*/
+    counter-reset: numbering;
+    margin: 0 30px;
+    list-style-type: none;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: 300;
+    position: relative;
+}
+
+/* ::before is a pseudo-element is like an editable text before the an html element */
+/* This CSS selector basically adds a number before each list item */
+#instructions-list-items>li::before {
+    /* Add to the counter value by 1 */
+    counter-increment: numbering;
+    /* Displays the counter value */
+    content: counter(numbering);
+    font-size: 40px;
+    margin: 0 30px;
+    position: absolute;
+    left: -50px;
+}
+
+/* ::after is a pseudo-element as well*/
+/* This CSS selector basically adds a horizontal line after each list item */
+/* :not(:last-of-type) applies the style to all list items except the last one */
+#instructions-list-items>li:not(:last-of-type)::after {
+    /* Displays nothing */
+    content: '';
+    /* Displays the content on a new line*/
+    display: block;
+    border-bottom: 1px solid #001524;
+    margin: 30px 0;
+}
+
+footer {
+    background-color: #001524;
+    color: #E6E5A3;
+    height: 100px;
+    padding: 30px;
+}
+
+#footer-components {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 91px;
+}
+
+#footer-nav>a {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+/* Sets the font-weight and size of headings 4 in footers*/
+h4 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#copyright {
+    letter-spacing: 1px;
+}
