@@ -63,6 +63,8 @@ aside {
     color: white;
 }
 
+/*changes the list style into a dash*/
+
 #line-up-list {
     list-style-type: '-  ';
     padding: 0;
