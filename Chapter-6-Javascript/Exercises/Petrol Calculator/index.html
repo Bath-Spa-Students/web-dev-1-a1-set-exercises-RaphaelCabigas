@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Petrol Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <img src="images/jerry-can.png" alt="Petrol Jerry Can">
+            <hr>
+            <p>Enter the cost of petrol per liter and the number of liters purchased to calculate the total cost of
+                petrol
+            </p>
+        </section>
+        <section>
+            <h2>Cost of Petrol Per Liter</h2>
+            <!--number type only allows numbers for user input which is set with their own default value-->
+            <input id="petrol-price" type="number" value=1.72>
+            <h2>Number of Liters Purchased</h2>
+            <input id="liters" type="number" value=0>
+            <!--onclick attribute allows certain events to happen when the button element is clicked-->
+            <button id="calculate-btn" onclick=calculate()>Calculate</button>
+            <h3 id="total-cost">Total Cost: <span id="display-cost"></span></h3>
+        </section>
+    </main>
+    <footer>&copy; Raphael Chester Corpus Cabigas</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
