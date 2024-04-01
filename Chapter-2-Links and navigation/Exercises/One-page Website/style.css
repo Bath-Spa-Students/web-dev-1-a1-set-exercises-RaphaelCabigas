@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+
+html {
+    /* When an section link has been clicked it will smoothly scroll and navigate the selected section*/
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #01ACA4;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, white, #04AA73, #03AA7E, #02AB90, #01ACA4);
+    color: white;
+    font-family: "Cinzel", serif;
+}
+
+span {
+    font-family: "Zen Old Mincho", serif;
+}
+
+#logo {
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #03AA7E;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 40px 0;
+}
+
+#nav-components {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li>a:hover {
+    background-color: #03AA7E;
+    color: white;
+}
+
+li>a {
+    color: #03AA7E;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+
+li {
+    padding: 20px;
+}
+
+li:not(:last-of-type) {
+    color: #03AA7E;
+    border-right: 1px solid #03AA7E;
+}
+
+
+header {
+    padding: 190px;
+    background-color: #00000043;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 30px 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover {
+    border: 1px solid #03AA7E;
+    background-color: #03AA7E;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 40px 0;
+    margin: 0 40px;
+    margin-bottom: 30px;
+}
+
+.long-description {
+    margin: 0 40px;
+}
+
+.division {
+    padding: 70px 70px 90px 70px;
+    border-top: 1px solid white;
+}
+
+#grid-container {
+    display: grid;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 30px;
+    gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.rectangle {
+    background-color: white;
+    padding: 200px 100px;
+    transition: 0.5s;
+}
+
+.rectangle:hover {
+    font-size: 35px;
+    border: 6px double #DCCD85;
+}
+
+.frieren {
+    background-color: #c5c5c7;
+}
+
+.himmel {
+    background-color: #495893;
+}
+
+.heiter {
+    background-color: #8FAD4A;
+}
+
+.eisen {
+    background-color: #A23D26;
+}
+
+.pic-box {
+    line-height: 300px;
+    text-align: center;
+    width: 1500px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.pic-box:hover {
+    border: 6px double #DCCD85;
+}
+
+.voice-actor {
+    font-style: italic;
+    color: #03AA7E;
+    padding: 7px;
+    background-color: white;
+}
+
+.chars {
+    display: flex;
+    align-items: center;
+    margin: 80px 50px;
+}
+
+.chars:first-of-type {
+    margin-top: 20px;
+}
+
+.chars:last-of-type {
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.character-description {
+    margin: 0 40px;
+}
+
+p {
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-family: "Zen Old Mincho", serif;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#grid-container-2 {
+    display: grid;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 40px;
+    gap: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.review-link {
+    transition: 0.5s;
+}
+
+.review-link:hover {
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+.review-text {
+    text-align: left;
+}
+
+footer {
+    border-top: 1px solid white;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+#sources {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+#sources>a {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+#sources>a:hover {
+    background-color: white;
+    color: #03AA7E;
+}
+
+.border-line {
+    width: 0.5px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: white;
+}
+
+#back-to-top {
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+#back-to-top:hover {
+    background-color: white;
+    color: #03AA7E;
+}
