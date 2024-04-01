@@ -33,19 +33,15 @@ a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
+    /*adds a smooth transition and changes the property values of the element*/
+    transition: .5s;
 }
 
 a:hover {
-    /*adds a smooth transition and changes the property values of the elemnt*/
     transition-duration: 0.5s;
     color: black;
     background-color: white;
     border: 1px solid white;
-}
-
-a:not(:hover) {
-    /*adds a smooth transition to its original state when not hovered*/
-    transition-duration: 0.5s;
 }
 
 footer {
