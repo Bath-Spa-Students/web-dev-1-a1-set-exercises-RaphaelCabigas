@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #DC5F00;
+    margin: 0;
+}
+
+header {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    padding: 50px;
+    margin: 0 24%;
+}
+
+p {
+    text-align: center;
+    margin-top: 35px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+input {
+    font-family: "Josefin Sans", sans-serif;
+    border: .5px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    transition: .2s;
+}
+
+input:focus {
+    /* when the input field is used or selected the element's properties will be changed */
+    background-color: rgb(239, 239, 239);
+    outline: 3px solid #F5A31A;
+    border: none;
+}
+
+#total-cost {
+    background-color: #F5A31A;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+span {
+    font-weight: normal;
+}
+
+button {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e83434;
+    font-size: 15px;
+    padding: 20px;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #e41f1f;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
