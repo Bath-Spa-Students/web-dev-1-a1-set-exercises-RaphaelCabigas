@@ -12,6 +12,11 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 60px;
+    color: white;
+}
+
 main {
     display: grid;
     gap: 10%;
@@ -52,7 +57,7 @@ input:focus {
     background-color: #F5A31A;
     border-radius: 20px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 span {
@@ -60,9 +65,10 @@ span {
 }
 
 button {
-    color: white;
+    color: black;
+    font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
-    margin-top: 20px;
+    margin-top: 30px;
     border: none;
     border-radius: 20px;
     background-color: #e83434;
@@ -77,6 +83,7 @@ button:hover {
 }
 
 footer {
+    color: white;
     margin-top: 30px;
     text-align: center;
 }
