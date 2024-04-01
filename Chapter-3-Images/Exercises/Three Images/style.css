@@ -48,39 +48,32 @@ a {
     color: white;
 }
 
-/*a transition effect when the following elements are hovered*/
+/*a smooth transition effect when the following elements are hovered*/
+a,
+#hue-rotate,
+#blur,
+#sepia {
+    transition: 0.5s;
+}
 
 a:hover {
     text-decoration: underline;
-    transition-duration: 0.5s;
     font-size: 20px;
 }
 
 #hue-rotate:hover {
-    transition-duration: 0.5s;
     /*hue-rotate filter*/
     filter: hue-rotate(90deg);
 }
 
 #blur:hover {
-    transition-duration: 0.5s;
     /*blur filter*/
     filter: blur(2px);
 }
 
 #sepia:hover {
-    transition-duration: 0.5s;
     /*sepia filter*/
     filter: sepia(60%);
-}
-
-/*when hovering away from the element it will transition back to its original form*/
-
-a,
-#hue-rotate,
-#blur,
-#sepia:not(:hover) {
-    transition-duration: 0.5s;
 }
 
 hr {
