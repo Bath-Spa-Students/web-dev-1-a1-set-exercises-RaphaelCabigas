@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+
+::selection {
+    background-color: #01ACA4;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #03AA7E;
+    font-family: "Cinzel", serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+#nav-components {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 0;
+}
+
+#logo {
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #03AA7E;
+    transition: 0.5s;
+}
+
+#logo:hover {
+    letter-spacing: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li>a:hover {
+    color: white;
+}
+
+li {
+    padding: 20px 20px;
+}
+
+li>a {
+    color: #03AA7E;
+    position: relative;
+    transition: 0.5s;
+}
+
+li:not(:last-of-type) {
+    color: #03AA7E;
+    border-right: 1px solid #03AA7E;
+}
+
+button {
+    background-color: transparent;
+    color: #03AA7E;
+    text-transform: uppercase;
+    border: 1px solid #03AA7E;
+    font-family: "Cinzel", serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding: 30px 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #03AA7E;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#home {
+    display: flex;
+    align-items: flex-end;
+}
+
+#side-text {
+    font-family: "Zen Old Mincho", serif;
+    margin-left: 50px;
+    margin-right: 100px;
+    font-size: 50px;
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 68px;
+}
+
+#review {
+    display: grid;
+    padding: 150px 40px;
+    align-items: flex-start;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 40px;
+    gap: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.review-link {
+    font-size: 40px;
+    color: #03AA7E;
+    position: relative;
+    transition: 0.5s;
+}
+
+.review-link:hover {
+    color: white;
+    letter-spacing: 5px;
+}
+
+p {
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-family: "Zen Old Mincho", serif;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#about,
+#plot,
+#production,
+#cast {
+    margin: 0 40px;
+    text-align: justify;
+
+    h1 {
+        /* Heading 1s within these ids will be aligned center*/
+        text-align: center;
+    }
+}
+
+.frieren {
+    background-color: #c5c5c7;
+}
+
+.himmel {
+    background-color: #495893;
+}
+
+.heiter {
+    background-color: #8FAD4A;
+}
+
+.eisen {
+    background-color: #A23D26;
+}
+
+.pic-box {
+    line-height: 300px;
+    width: 1500px;
+    height: 300px;
+}
+
+.chars {
+    display: flex;
+    align-items: center;
+    margin: 80px 50px;
+}
+
+.chars:first-of-type {
+    margin-top: 20px;
+}
+
+.chars:last-of-type {
+    margin-bottom: 50px;
+}
+
+.character-description {
+    margin: 0 40px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.voice-actor {
+    font-style: italic;
+    color: white;
+    padding: 7px;
+    background-color: #03AA7E;
+}
+
+#sources {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 120px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#credits {
+    margin: 0 40px;
+    text-align: center;
+}
+
+
+#sources>a {
+    color: #03AA7E;
+    padding: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+#sources>a:hover {
+    background-color: #03AA7E;
+    color: white;
+    letter-spacing: 5px;
+}
+
+#nav-components>li>a::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    display: block;
+    width: 0;
+    height: 40px;
+    background-color: #03AA7E;
+    /*z-index specifies a higher number displays in front while a lower number displays behind*/
+    z-index: -1;
+    transition: .5s;
+}
+
+#nav-components>li>a:hover::after {
+    width: 100%;
+}
+
+.review-link::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    display: block;
+    width: 0;
+    height: 40px;
+    background-color: #03AA7E;
+    z-index: -1;
+    transition: .5s;
+}
+
+.review-link:hover::after {
+    width: 100%;
+}
