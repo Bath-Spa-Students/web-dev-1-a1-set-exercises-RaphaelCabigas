@@ -4,13 +4,12 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
     background-image: linear-gradient(to bottom, #FFFFFF, #FFA3A3, #DF3535);
 }
 
 .portraits {
-    width: 300px;
-    height: 600px;
+    width: 400px;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -24,17 +23,9 @@ h1 {
 
 main {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
-div {
-    margin: 0 50px;
-    padding: 0.5px;
-    /*height set to auto which adjust to the height of the container*/
-    height: auto;
-    background-image: linear-gradient(to top, #FFFFFF, #DF3535);
 }
 
 figcaption {
@@ -59,6 +50,7 @@ a,
 a:hover {
     text-decoration: underline;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 #hue-rotate:hover {
@@ -76,11 +68,14 @@ a:hover {
     filter: sepia(60%);
 }
 
-hr {
-    margin: 0 100px;
+footer {
+    padding: 30px;
+    color: white;
 }
 
-footer {
-    padding: 60px;
-    color: white;
+p {
+    text-transform: uppercase;
+    font-weight: 400;
+    /*float moves the element to the bottom right of the container*/
+    float: right;
 }
