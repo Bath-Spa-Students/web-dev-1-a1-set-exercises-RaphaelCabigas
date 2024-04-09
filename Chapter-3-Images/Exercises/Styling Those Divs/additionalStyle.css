@@ -1,0 +1,31 @@
+#A {
+    border: 5px solid blueviolet;
+    /*adds a shadow to the container itself*/
+    /*box-shadow: right position, bottom position, blurriness, color;*/
+    box-shadow: red 10px 10px 10px;
+
+}
+
+#B {
+    border: 5px solid lime;
+    /*inset makes an inner shadow*/
+    box-shadow: inset 10px 10px 10px;
+}
+
+#C {
+    border: 5px solid orange;
+    border-radius: 30px;
+    /*the 4th value affects the size of the box shadow similar to padding*/
+    /*separated by a comma can add multiple box shadows to the element*/
+    box-shadow:
+        0 0 0 10px blue,
+        0 0 0 20px red,
+        0 0 0 30px green;
+}
+
+#D {
+    border: 5px solid red;
+    /*adds a shadow to the text*/
+    /*text-shadow: right position, bottom position, blurriness;*/
+    text-shadow: black 5px 5px 2px;
+}
