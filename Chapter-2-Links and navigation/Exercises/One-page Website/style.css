@@ -25,7 +25,6 @@ span {
 
 #logo {
     font-size: 38px;
-    font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
     color: #03AA7E;
@@ -35,6 +34,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: bold;
     margin: 0 30px;
     padding: 40px 0;
 }
@@ -42,7 +42,6 @@ nav {
 #nav-components {
     display: flex;
     align-items: center;
-    font-weight: 600;
     font-size: 25px;
     padding: 0;
 }
@@ -57,13 +56,14 @@ li>a:hover {
 }
 
 li>a {
+    font-weight: bold;
     color: #03AA7E;
     padding: 20px;
     transition-duration: 0.5s;
 }
 
 li {
-    padding: 20px;
+    padding: 15px;
 }
 
 li:not(:last-of-type) {
@@ -74,14 +74,13 @@ li:not(:last-of-type) {
 
 header {
     padding: 190px;
-    background-color: #00000043;
+    background-color: #00000089;
     text-align: center;
 }
 
 button {
     background-color: transparent;
     color: white;
-    text-transform: uppercase;
     border: 1px solid white;
     font-family: "Cinzel", serif;
     font-size: 20px;
@@ -109,7 +108,7 @@ h2 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 69px;
 }
 
 h2 {
@@ -128,7 +127,7 @@ h2 {
     border-top: 1px solid white;
 }
 
-#grid-container {
+#character-container {
     display: grid;
     text-align: center;
     font-size: 30px;
@@ -167,7 +166,6 @@ h2 {
 
 .pic-box {
     line-height: 300px;
-    text-align: center;
     width: 1500px;
     height: 300px;
     transition: 0.5s;
@@ -216,7 +214,7 @@ p {
     text-align: justify;
 }
 
-#grid-container-2 {
+#review-container {
     display: grid;
     font-size: 30px;
     font-weight: 500;
@@ -230,7 +228,8 @@ p {
 }
 
 .review-link:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #03AA7E;
     letter-spacing: 5px;
 }
 
