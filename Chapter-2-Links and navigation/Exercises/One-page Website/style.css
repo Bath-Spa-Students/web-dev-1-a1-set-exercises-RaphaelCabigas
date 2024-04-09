@@ -71,7 +71,6 @@ li:not(:last-of-type) {
     border-right: 1px solid #03AA7E;
 }
 
-
 header {
     padding: 190px;
     background-color: #00000089;
@@ -140,12 +139,6 @@ h2 {
 .rectangle {
     background-color: white;
     padding: 200px 100px;
-    transition: 0.5s;
-}
-
-.rectangle:hover {
-    font-size: 35px;
-    border: 6px double #DCCD85;
 }
 
 .frieren {
@@ -168,11 +161,6 @@ h2 {
     line-height: 300px;
     width: 1500px;
     height: 300px;
-    transition: 0.5s;
-}
-
-.pic-box:hover {
-    border: 6px double #DCCD85;
 }
 
 .voice-actor {
