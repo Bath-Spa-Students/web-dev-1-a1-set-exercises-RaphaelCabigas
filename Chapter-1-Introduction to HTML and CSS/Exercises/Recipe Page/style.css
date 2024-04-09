@@ -24,8 +24,8 @@ nav {
     display: flex;
     /* Aligns the child elements vertically center to nav */
     align-items: center;
-    /* Aligns the child elements horizontally center to nav */
-    justify-content: center;
+    /* Aligns the child elements to be spaced evenly with each other */
+    justify-content: space-evenly;
     height: 133px;
 }
 
@@ -36,24 +36,36 @@ a {
     text-decoration: none;
 }
 
-#logo {
-    margin-right: 171px;
-}
-
 .nav-links {
     font-size: 20px;
-    margin-right: 76px;
     letter-spacing: 5px;
     /* Makes the text displayed to uppercase letters */
     text-transform: uppercase;
 }
 
+/* ::after is a pseudo-element*/
+/* This CSS selector basically adds a horizontal line after each list item */
+.nav-links::after {
+    /* Displays the content with nothing */
+    content: '';
+    /* Displays the content on a new line */
+    display: block;
+    width: 0;
+    height: .5px;
+    background-color: #E6E5A3;
+    /* adds a smooth transition effect */
+    transition: .5s;
+}
+
+/* This CSS selector when hovered it will transition to the full width which will display an underline*/
+.nav-links:hover::after {
+    width: 100%;
+}
+
 header {
-    /* Sets the top and bottom margin 0 while right and left to 91px */
     color: white;
-    margin: 0 91px;
-    /* Sets the top and bottom padding 143px while right and left to 0*/
-    padding: 143px 0;
+    /* Sets the top and bottom margin 143px while right and left to 91px */
+    margin: 143px 91px;
     display: flex;
 }
 
@@ -115,13 +127,19 @@ main {
 
 #ingredients-section {
     margin-bottom: 143px;
-    display: flex;
-    justify-content: space-evenly;
+    /* Display is set to grid */
+    display: grid;
+    /* grid-template-columns allows to automatically adjust the sizes of the elements within the section */
+    /* this is set to 2 1fr units so that it will divide the elements into 2 sections*/
+    grid-template-columns: 1fr 1fr;
+    /* gap adjusts the gap or spaces between the grid layout*/
+    gap: 9%;
+    /*justify-items is used for the grid container that centers the child elements of the container itself*/
+    justify-items: center;
 }
 
 #ingredients-images {
     margin: 65px 0;
-    width: 630px;
     /* Sets the position of the element relative basically the current position of the element */
     position: relative;
 }
@@ -198,13 +216,10 @@ h3 {
     left: -20px;
 }
 
-/* ::after is a pseudo-element as well*/
-/* This CSS selector basically adds a horizontal line after each list item */
+
 /* :not(:last-of-type) applies the style to all list items except the last one */
 #instructions-list-items>li:not(:last-of-type)::after {
-    /* Displays nothing */
     content: '';
-    /* Displays the content on a new line*/
     display: block;
     border-bottom: 1px solid #001524;
     margin: 30px 0;
