@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Alan Partridge Soundboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Audio Sampler</h1>
+    </header>
+    <main>
+        <section>
+            <textarea id="text-to-speech" placeholder="Enter text here"></textarea>
+            <button onclick="textToSpeech()" type="button" id="speak">SPEAK</button>
+            <p>click the speak button to generate text to speech</p>
+        </section>
+        <section id="grid-container">
+            <button onclick="getAudio()" id="ah-ha">Ah-ha</button>
+            <button onclick="getAudio()" id="back-of-the-net">Back of the Net</button>
+            <button onclick="getAudio()" id="bangoutoforder">Bang out of Order</button>
+            <button onclick="getAudio()" id="dan">Dan</button>
+            <button onclick="getAudio()" id="emailoftheevening">Email of the Evening</button>
+            <button onclick="getAudio()" id="hellopartridge">Hello Partridge</button>
+            <button onclick="getAudio()" id="iateascotchegg">I Ate A Scotch Egg</button>
+            <button onclick="getAudio()" id="imconfused">I'm Confused</button>
+            <!--a button placeholder for now-->
+            <button>Just a button</button>
+        </section>
+    </main>
+    <footer>
+        &copy; Raphael Chester Corpus Cabigas
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
