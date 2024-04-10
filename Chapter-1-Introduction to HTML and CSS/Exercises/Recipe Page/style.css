@@ -235,7 +235,7 @@ footer {
 #footer-components {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0 91px;
 }
 
